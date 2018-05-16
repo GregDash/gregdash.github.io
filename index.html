@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <title>🔍 Facebook Scanner</title>
   <meta content="Bootply" name="generator">
-  <meta name="keywords" content="privacy, facebook, hack, hacking, tool, public, info, stalk, stalking, lookup, scanner, private info, vulnerability, graph, search, virus scan, antivirus, protection, social media, stalking, stalkscan, fb, personal data, big data, search, intelligence" />
+  <meta name="keywords" content="privacy, facebook, vulnerability, graph search, virus scan, antivirus, protection, social media, stalking, stalkscan, fb, personal data, big data, search, intelligence" />
   <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
   <meta content="http://stalkscan.com/social_en.jpg" property="og:image">
   <meta content="Inti De Ceukelaire" property="og:author">
@@ -18,11 +18,11 @@
   <meta content="Facebook Scanner - All 'public' info Facebook doesn't show you" property="og:title">
   <meta content="The #1 stalking tool - 100% free and anonymous!" property="og:description">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="http://stalkscan.com/css/bootstrap.min.css" rel="stylesheet"><!--[if lt IE 9]>
+  <link href="./css/bootstrap.min.css" rel="stylesheet"><!--[if lt IE 9]>
       <script src="/html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  <link href="http://stalkscan.com/css/styles.css" rel="stylesheet">
-  <link href="http://stalkscan.com/css/main.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -30,10 +30,12 @@
     enable_page_level_ads: true
   });
 </script>
-  
+  <script>
+     var twitterCopy = "Creepy: 'Facebook Scanner' reveals all 'public' info Facebook doesn't show you http://stalkscan.com";
+  </script>
 </head>
 <body class="app">
-  <!--<script>
+  <script>
    window.fbAsyncInit = function() {
      FB.init({
        appId      : '274006846363721',
@@ -53,7 +55,7 @@
       js.src = "//connect.facebook.net/en_US/sdk.js";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-  </script>-->
+  </script>
   <script>
   window.twttr = (function(d, s, id) {
    var js, fjs = d.getElementsByTagName(s)[0],
@@ -73,6 +75,7 @@
   }(document, "script", "twitter-wjs"));
   </script>
   <div id="lang-container">
+    <a class="lang-icon" href="http://stalkscan.com/nl">NL</a> | <a class="lang-icon" href="http://stalkscan.com/fr">FR</a> | <a class="lang-icon selected" href="http://stalkscan.com/en">EN</a>
 	</div>
 
   <div class="wrapper">
@@ -80,63 +83,57 @@
       <div class="row row-offcanvas row-offcanvas-left">
         <header>
           <div id="header-content">
-            <img id="logo" src="http://stalkscan.com/img/logo2.png">
-                       <div id="desktop-content">
+            <img id="logo" src="./img/logo2.png">
+            <p id="tagline">All 'public' info Facebook doesn't let you see</p>
+            <div id="desktop-content">
               <form id="searchbar" name="searchbar">
-                <p id="searchbar-desc"><b>Profile Page:</b></p><input autofocus="" id="searchbar-value" placeholder="https://facebook.com/yourprofile" type="text"><button id="searchbar-go"><i class="fa fa-search"></i></button>
+                <p id="searchbar-desc"><b>👉 Enter the link of the profile you want to check 👈</b></p><input autofocus="" id="searchbar-value" placeholder="https://facebook.com/yourprofile" type="text"><button id="searchbar-go"><i class="fa fa-search"></i></button>
                 <div class="clear"></div>
               </form>
-              <h2 class="target-error">Couldn't load the profile.</h2>
+              <h2 class="target-error">Couldn't load the profile. Read the <a href="faq.pdf">FAQ</a> for troubleshouting.</h2>
               <h2 class="target-loaded">Profile <span id="target-id"></span> loaded!</h2>
-              <p style="color:#fff;margin-top:20px"><b>Attention:</b> this tool does <strong>not</strong> violate Facebook's privacy settings. 'Only me' stays 'only me'. <br/>It only shows hidden content you have access to, on Facebook.</p>
+              <p style="color:#fff;margin-top:20px"><b>Attention:</b> this tool does <strong>not</strong> violate Facebook's privacy settings. 'Only me' stays 'only me'. <br/>It only shows hidden content you have access to.</p>
             </div>
             <div id="mobile-content">
-              <img src="http://stalkscan.com/img/nomobile.png"><br>
+              <img src="./img/nomobile.png"><br>
               <h1>Attention!</h1>
               <h2>This tool currently doesn't work on mobile browsers.<br>
               <br>
               Try using a laptop or a PC.</h2>
             </div>
             <div class="share-container">
-              <!--<div class="btn-share fb-share"><img class="btn-normal" height="25" src="./share.png"> <img class="btn-hover" height="25" src="http://stalkscan.com/share_hover.png"></div>-->
-              <div class="btn-share twitter-share"><img class="btn-normal" height="25" src="http://stalkscan.com/tweet.png"> <img class="btn-hover" height="25" src="./tweet_hover.png"></div>
+              <div class="btn-share fb-share"><img class="btn-normal" height="25" src="./share.png"> <img class="btn-hover" height="25" src="./share_hover.png"></div>
+              <div class="btn-share twitter-share"><img class="btn-normal" height="25" src="./tweet.png"> <img class="btn-hover" height="25" src="./tweet_hover.png"></div>
             </div>
           </div>
         </header>
           <div id="wrapper">
           <!-- main right col -->
           <div id="instructions">
-<div id="ab-only" style="
-    font-size: 0.8em;
-">
-<!--Adblock detected - feel free to donate to support us instead! Thank you! ❤️️<a href="#" onclick="noDonate();" id="close" style="
-    display: inline-block;
-    position: absolute;
-    color: #888;
-    font-weight: normal;
-    font-size: 0.7em;
-    position: relative;
-    bottom: 6px;
-    left: 4px;
-">[x]</a><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="
-    padding: 15px;
-">
+            <!--
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick">
             <input type="hidden" name="hosted_button_id" value="5CBKT3R2NTRPS">
             <input type="image" src="https://www.paypalobjects.com/en_US/BE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
             -->
-<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-  
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
 
 
             <!-- Stalkscan3 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1483242794782900"
+     data-ad-slot="8625473993"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-  </div>
+
           </div>
           <div id="app">
             <div class="column col-md-4 col-sm-6 col-xs-12" id="main">
@@ -144,13 +141,13 @@
                 <table class="table table-hover" id="options">
                   <thead>
                     <tr>
-                      <th width="20"><img class="fb-icon" src="http://stalkscan.com/img/info.png"></th>
+                      <th width="20"><img class="fb-icon" src="./img/info.png"></th>
                       <th>Avalable options</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="option no-surroundings no-places no-interests">
-                      <td><img class="fb-icon" src="http://stalkscan.com/img/when.png"></td>
+                      <td><img class="fb-icon" src="./img/when.png"></td>
                       <td class="select"><select class="var" data-name="time">
                         <option value="/" data-default="true">
                           Everything
@@ -163,9 +160,6 @@
                         </option>
                         <option value="/this-month/date/{subject}/intersect">
                           This month
-                        </option>
-                        <option value="/2018/date/{subject}/intersect">
-                          2018
                         </option>
                         <option value="/2017/date/{subject}/intersect">
                           2017
@@ -796,12 +790,11 @@
               </div>
             </div>
             <footer>
-<!-- Stalkscan4 -->
+            <!-- Stalkscan -->
 <ins class="adsbygoogle"
-     style="display:block"
+     style="display:inline-block;width:728px;height:90px"
      data-ad-client="ca-pub-1483242794782900"
-     data-ad-slot="2322124799"
-     data-ad-format="auto"></ins>
+     data-ad-slot="4533351597"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -810,18 +803,15 @@
               <br/>
               <a class="twitter-follow-button" data-size="large" href="https://twitter.com/securinti">Securinti @securinti</a><br>
               <br>
-              &copy; 2018 - <a href="https://twitter.com/securinti">Inti De Ceukelaire (@securinti)</a> - Icons: <a href="https://icons8.com/" target="_blank">icons8</a><br>
+              &copy; 2017 - <a href="https://twitter.com/securinti">Inti De Ceukelaire (@securinti)</a> - Icons: <a href="https://icons8.com/" target="_blank">icons8</a><br>
               <br>
-              <i>Disclaimer: no personal data is stored. All requested content is shown on facebook.com, not on stalkscan. This site is not affiliated with Facebook.</i>
-              <br/>
-              <small><br/>StalkScan is a tool that shows all public information for a given Facebook profile. <br/>It doesn't involve any hack or hacking, it just displays public info from Facebook's official graph search.<br/>Please be aware that results depend on privacy settings: if information is set to 'friends only' it will only show up for Facebook friends.<br/>The website itself is ment for a personal privacy checkup, not for stalking.<br/></small>
+              <i>Disclaimer: no personal data is stored. This site is not affiliated with Facebook.</i>
             </footer>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js">
   </script>
   <script src="./js/bootstrap.min.js">
@@ -829,7 +819,7 @@
   <script src="./js/scripts.js">
   </script>
   <script>
-                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
